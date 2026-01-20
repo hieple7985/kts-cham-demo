@@ -1,0 +1,84 @@
+name: customer_care_app
+description: AI-powered customer care reminder app for real estate sales (Demo)
+publish_to: 'none'
+version: 0.4.0+4
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # Note: supabase_flutter removed for demo - using mock services instead
+  # supabase_flutter: ^2.0.0
+
+  # Local Database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Navigation
+  go_router: ^17.0.0
+
+  # UI Components
+  flutter_screenutil: ^5.9.0
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  flutter_svg: ^2.0.9
+  widgetbook: ^3.20.2
+
+  # Forms & Validation
+  flutter_form_builder: ^10.2.0
+  form_builder_validators: ^11.2.0
+
+  # Date & Time
+  intl: ^0.20.2
+  timeago: ^3.6.0
+
+  # Utilities
+  uuid: ^4.2.2
+  equatable: ^2.0.5
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  http: ^1.2.2
+  package_info_plus: ^8.0.0
+
+  # Inputs
+  pinput: ^5.0.0
+
+  # Logging
+  logger: ^2.0.2+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code Generation
+  build_runner: ^2.4.7
+  riverpod_generator: ^2.3.9
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  hive_generator: ^2.0.1
+
+  # Linting
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/data/
+    - assets/images/
+
+  # Fonts
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: fonts/Roboto-Regular.ttf
+  #       - asset: fonts/Roboto-Bold.ttf
+  #         weight: 700
